@@ -18,7 +18,7 @@ The CD strategy was developed in GH with the help of the Lunchbox plugin for the
             Different iterations of the golden ring made with the same generative strategy.
 
 
-Case study #2: Accessories 
+* Case study #2: Accessories 
 
 The second case study was conducted in collaboration with a button factory of the Bologna district. It was proposed an integration of customization features in the digital modelling of a grumette button. Making some open input for the designer, the customization process allows to easily iterate different changes whilst remaining consistent with the initial design.By using this Grasshopper definition is possible to change some geometric parameters, such as the radius of the button or the dimension of the link of the chain, to reduce or increase the dimension of the button depending on which part of cloth, it will be used on. Regarding the construction process, Polyjet 3D printing can be considered to get the button printed in one piece.
 As the previous case study, the entire 3D model is directly built in Grasshopper without external references, allowing to change completely the geometry of the button depending on the features of the GH definition.
