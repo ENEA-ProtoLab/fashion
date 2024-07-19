@@ -39,6 +39,21 @@ Different iterations of the button made with the same generative strategy
 Finally, the last case study carried out concerned the application of this methodology to the embroidery sector. Starting from a piece of fabric it has been possible, by means of GH definitions, to apply different geometry on the same. Fully adaptable geometries by the designer in a parametric way to easily obtain the most appropriate and aesthetically valid configuration.
 The geometry produced can be printed directly on the piece of fabric or dress by means of, for example, a Stratasys J850 3D printer achieving a three-dimensional effect with different colours and transparencies.
 
+*3.1 Decorating a piece of fabric with different aesthetic configurations*
+
+![image](https://github.com/user-attachments/assets/1a0c97b5-2d6f-4931-8f6b-d76be603046b)
+
+IGM strategy for case study #3
+
+*3.2 Design recovery and colour customization from corporate collection models*
+The embroidery sector, especially that intended for large fashion brands, increasingly uses automatic machines that allow for precise and quality results but do not lend themselves to garment customization as the machine setup and preparation times are long and complex.
+The input data is often made up of drawings made by hand by the designer and creative of the company that are then transformed into vector format via 2D scanning and subsequently inserted into a 2D CAD for the manual redesign of the decorations. This case study aims to recover the drawings that represent the company's history, apply sampling algorithms for the automatic creation of curves and allow advanced customization of the colour distribution using IGM and subsequent creation of the 3D model for direct printing on fabric with PJ technology.The definition of IGM developed in this case study consists of three parts.
+
+![image](https://github.com/user-attachments/assets/b5a2246e-4f7e-470d-9016-02b057ef7d45)
+
+The three components of IGM: sampling, 3D model and custom coloring.
+
+
 
 
 
