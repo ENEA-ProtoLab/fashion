@@ -58,6 +58,8 @@ The first one imports the 2D image from the scan and performs its sampling to cr
 
 ![image](https://github.com/user-attachments/assets/71610745-ff48-4859-b889-3bc951983be0)
 
+The final result using IGM 
+
 
 
 
