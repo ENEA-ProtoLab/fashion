@@ -34,7 +34,7 @@ The main parameter is the circle of the inner part of the button from which the 
 
 Different iterations of the button made with the same generative strategy
 
-## Case study #3: Embroidery clothes.
+## Case study #3: Embroidery clothes
 
 Finally, the last case study carried out concerned the application of this methodology to the embroidery sector. Starting from a piece of fabric it has been possible, by means of GH definitions, to apply different geometry on the same. Fully adaptable geometries by the designer in a parametric way to easily obtain the most appropriate and aesthetically valid configuration.
 The geometry produced can be printed directly on the piece of fabric or dress by means of, for example, a Stratasys J850 3D printer achieving a three-dimensional effect with different colours and transparencies.
