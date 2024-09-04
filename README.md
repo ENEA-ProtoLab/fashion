@@ -63,9 +63,12 @@ The embroidery sector, especially that intended for large fashion brands, increa
 The input data is often made up of drawings made by hand by the designer and creative of the company that are then transformed into vector format via 2D scanning and subsequently inserted into a 2D CAD for the manual redesign of the decorations. This case study aims to recover the drawings that represent the company's history, apply sampling algorithms for the automatic creation of curves and allow advanced customization of the colour distribution using IGM and subsequent creation of the 3D model for direct printing on fabric with PJ technology.
 
 
+
 <img width="728" alt="image" src="https://github.com/user-attachments/assets/3b101dd0-607f-4e90-858c-48dd2616c79f">
 
 Design recovery from corporate collection models
+
+
 
 ![image](https://github.com/user-attachments/assets/4bdb0666-29e1-41ce-8ffd-d7a029dd161e)
 
