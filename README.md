@@ -21,32 +21,19 @@ The CD strategy was developed in GH with the help of the Lunchbox plugin for the
   Different iterations of the golden ring made with the same generative strategy.
 
 
-## Case study #2: Accessories
-
-The second case study was conducted in collaboration with a button factory of the Bologna district. It was proposed an integration of customization features in the digital modelling of a grumette button. Making some open input for the designer, the customization process allows to easily iterate different changes whilst remaining consistent with the initial design.By using this Grasshopper definition is possible to change some geometric parameters, such as the radius of the button or the dimension of the link of the chain, to reduce or increase the dimension of the button depending on which part of cloth, it will be used on. Regarding the construction process, Polyjet 3D printing can be considered to get the button printed in one piece.
-As the previous case study, the entire 3D model is directly built in Grasshopper without external references, allowing to change completely the geometry of the button depending on the features of the GH definition.
-The main parameter is the circle of the inner part of the button from which the button itself is generated and every other feature of the button is re-generated according to it. In the GH definition of this case study, two plug in where mainly used: Pufferfish and Pancake. The first one was used because there are in it some parameters and factors for inputs for more custom control. Pancake includes, among other things, components for JSON-like structure manipulation and JSON/XML export/import support.  
-
-![image](https://github.com/user-attachments/assets/06f7cf58-7776-4e6b-a4bb-2093b24d0a6d)
-![image](https://github.com/user-attachments/assets/cdb92d1a-8749-48cd-96de-078c08a70299)
-
-![image](https://github.com/user-attachments/assets/49f985c4-9b23-4bd7-b3b7-0eea89772171)
-
-Different iterations of the button made with the same generative strategy
-
-## Case study #3: Embroidery clothes
+## Case study #2: Embroidery clothes
 
 Finally, the last case study carried out concerned the application of this methodology to the embroidery sector. Starting from a piece of fabric it has been possible, by means of GH definitions, to apply different geometry on the same. Fully adaptable geometries by the designer in a parametric way to easily obtain the most appropriate and aesthetically valid configuration.
 The geometry produced can be printed directly on the piece of fabric or dress by means of, for example, a Stratasys J850 3D printer achieving a three-dimensional effect with different colours and transparencies.
 
-*3.1 Decorating a piece of fabric with different aesthetic configurations*
+*2.1 Decorating a piece of fabric with different aesthetic configurations*
 
 Generative modeling applied to the creation of customized aesthetic 3D configurations on pieces of fabric and their printing with PJ technology offers various tools for the designer's creativity. From this point of view, dozens of algorithms can be used, but they must be both made available to the company designer who does not have a programming background and integrated and optimized within the company's production process.
 In this case study, the company provided the geometry of the piece of fabric to be decorated from which, using tools already developed in the project, the profile curve was extracted. The Voronoi algorithm was chosen as the decoration motif, which is currently very widespread in the fashion sector and allows high flexibility and customization. The IGM tool that was developed is composed of three parts.
 
 <img width="776" alt="image" src="https://github.com/user-attachments/assets/9534a855-d3ae-4c5c-84b2-371c7b14b22e">
 
-IGM strategy for case study #3
+IGM strategy for case study #2
 
 The first part of the algorithm, starting from the fabric profile curve, generates the tessellation cells of which both the number and the configuration can be chosen. Particular attention was paid to the production aspect by including a "Two-branch Dispatch" filter function that eliminates decorations that are too small and that, in the 3D printing phase, could not self "hook" well to the fabric.
 The second part of the IGM definition creates the relief decorations. At the same time, the third distributes the colour in a personalized way by moving a point called "Attractor" and choosing one of the presets made available on the "Gradient control" component.
@@ -57,29 +44,7 @@ From the point of view of the technology transfer action at the fashion company,
 Embossed decorations with Voronoi configuration and example of data structure management.
 
 
-*3.2 Design recovery and colour customization from corporate collection models*
 
-The embroidery sector, especially that intended for large fashion brands, increasingly uses automatic machines that allow for precise and quality results but do not lend themselves to garment customization as the machine setup and preparation times are long and complex.
-The input data is often made up of drawings made by hand by the designer and creative of the company that are then transformed into vector format via 2D scanning and subsequently inserted into a 2D CAD for the manual redesign of the decorations. This case study aims to recover the drawings that represent the company's history, apply sampling algorithms for the automatic creation of curves and allow advanced customization of the colour distribution using IGM and subsequent creation of the 3D model for direct printing on fabric with PJ technology.
-
-
-
-<img width="728" alt="image" src="https://github.com/user-attachments/assets/3b101dd0-607f-4e90-858c-48dd2616c79f">
-
-Design recovery from corporate collection models
-
-
-
-![image](https://github.com/user-attachments/assets/4bdb0666-29e1-41ce-8ffd-d7a029dd161e)
-
-
-The first one imports the 2D image from the scan and performs its sampling to create the curves. The second part inserts a threshold value that eliminates the micro-curves generated by the algorithm, as they would not allow the correct generation of the 3D model and produce the basic mesh of the decoration. With the task of making the algorithm responsive for easy and quick use by the user, it was chosen not to use Boolean operators due to the high number of elements and the long processing times required. Finally, the third part distributes a colour gradient, selected between those available, based on the position of a point chosen interactively by the user.
-
-
-![image](https://github.com/user-attachments/assets/3e4defd2-ca28-4f67-b50b-2f3d95ba1587)
-
-
-The results for the three components of IGM
 
 
 
