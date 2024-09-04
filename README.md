@@ -44,9 +44,13 @@ The geometry produced can be printed directly on the piece of fabric or dress by
 Generative modeling applied to the creation of customized aesthetic 3D configurations on pieces of fabric and their printing with PJ technology offers various tools for the designer's creativity. From this point of view, dozens of algorithms can be used, but they must be both made available to the company designer who does not have a programming background and integrated and optimized within the company's production process.
 In this case study, the company provided the geometry of the piece of fabric to be decorated from which, using tools already developed in the project, the profile curve was extracted. The Voronoi algorithm was chosen as the decoration motif, which is currently very widespread in the fashion sector and allows high flexibility and customization. The IGM tool that was developed is composed of three parts.
 
-![image](https://github.com/user-attachments/assets/1a0c97b5-2d6f-4931-8f6b-d76be603046b)
+<img width="776" alt="image" src="https://github.com/user-attachments/assets/9534a855-d3ae-4c5c-84b2-371c7b14b22e">
 
 IGM strategy for case study #3
+
+The first part of the algorithm, starting from the fabric profile curve, generates the tessellation cells of which both the number and the configuration can be chosen. Particular attention was paid to the production aspect by including a "Two-branch Dispatch" filter function that eliminates decorations that are too small and that, in the 3D printing phase, could not self "hook" well to the fabric.
+The second part of the IGM definition creates the relief decorations. At the same time, the third distributes the colour in a personalized way by moving a point called "Attractor" and choosing one of the presets made available on the "Gradient control" component.
+From the point of view of the technology transfer action at the fashion company, one of the most critical aspects for designers who do not have a programmer mentality to adopt these tools is understanding the data structure. To facilitate this, the example shows how the data can be stored in hierarchical structures similar to a branched tree. The data are stored in lists, but each list has a "path", a series of indices that describe the position of the data branch within the tree. For the two data structures, those of the points on the plane and those of the point in Z, to be compatible, it is necessary to apply the "Graft Tree" function that allows the ordered combination of the two structures and, therefore, the generation of 3D decorations.
 
 *3.2 Design recovery and colour customization from corporate collection models*
 
@@ -57,9 +61,7 @@ The input data is often made up of drawings made by hand by the designer and cre
 
 Embossed decorations with Voronoi configuration and example of data structure management.
 
-The first part of the algorithm, starting from the fabric profile curve, generates the tessellation cells of which both the number and the configuration can be chosen. Particular attention was paid to the production aspect by including a "Two-branch Dispatch" filter function that eliminates decorations that are too small and that, in the 3D printing phase, could not self "hook" well to the fabric.
-The second part of the IGM definition creates the relief decorations. At the same time, the third distributes the colour in a personalized way by moving a point called "Attractor" and choosing one of the presets made available on the "Gradient control" component.
-From the point of view of the technology transfer action at the fashion company, one of the most critical aspects for designers who do not have a programmer mentality to adopt these tools is understanding the data structure. To facilitate this, the example shows how the data can be stored in hierarchical structures similar to a branched tree. The data are stored in lists, but each list has a "path", a series of indices that describe the position of the data branch within the tree. For the two data structures, those of the points on the plane and those of the point in Z, to be compatible, it is necessary to apply the "Graft Tree" function that allows the ordered combination of the two structures and, therefore, the generation of 3D decorations.
+
 
 The three components of IGM: sampling, 3D model and custom coloring.
 
